@@ -3,14 +3,14 @@ import PromptSync from "prompt-sync";
 
 let choices=["rock","paper","scissors"];
 
-let userprompt="0 for rock, 1 for paper, 2 for scissors ";
+// let userprompt="0 for rock, 1 for paper, 2 for scissors ";
 let outcome="ready to play";
 
 let computerchoice=randomInteger(0,2);
 computerchoice=choices[computerchoice];
 
 const prompt=PromptSync();
-let userinput=prompt(userprompt);
+let userinput=prompt("0 for rock, 1 for paper, 2 for scissors ");
 let userchoice=choices[userinput];
 
 if(computerchoice === userchoice){
